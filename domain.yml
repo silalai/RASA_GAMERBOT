@@ -1,0 +1,156 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - Thanks
+  - option_info
+  - Bestgame_info
+  - bestgame_years
+  - bestgame_Genre
+  - more_info
+  - more_Top3
+  - moretop3_years
+  - moretop3_Genre
+  - Bestgame_2024_info
+  - bestgame_moretop3_2024_info
+  - bestgame_moretop5_2024_info
+  - Bestgame_2023_info
+  - bestgame_moretop3_2023_info
+  - bestgame_moretop5_2023_info
+  - Bestgame_simulation
+  - bestgame_moretop3_simulation
+  - bestgame_moretop5_simulation
+
+
+responses:
+########################### greet  ########################################
+  utter_greet:
+  - text: "Hi there,Welcome to GAMERBOT how can I help?"
+  - text: "Hello,Welcome to GAMERBOT how can I help?"
+
+  utter_goodbye:
+  - text: "See you!"
+  - text: "Have a nice day"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_thanks:
+  - text: "Happy to help!"
+  - text: "Any time!"
+  - text: "My pleasure"
+
+
+########################### option  ########################################
+  utter_options:
+  - text: "I can help you recommend games that are currently interesting, provide information about how to play, and answer questions about games."
+  - text: "I have many interesting functions, such as game recommendations, providing information about games, and suggestions on how to increase play fun."
+
+
+########################### What Bestgame ?  ########################################
+  utter_bestgame?:
+  - text: "You want to know the best game of what? You can choose by the year you want to know or by the 14 genre of the game.\nRight now, the information we have is only for the years 2023 and 2024 \nYou have to choose - years best game - or - 14 genre best game -"
+
+########################### What Bestgame Genre ?  ########################################
+  utter_bestgame_Genre:
+  - text: "Please select the genre of the best game you want to know. Currently, our data includes the following genres: \n1. simulation best game \n2. best game of the Visual Novel\n3. best game of the Shooting\n4. best game of the MOBA\n5. best game of the RPG\n6. best game of the MMORPG\n7. best game of the Rhythm\n8. best game of the Turn-based\n9. best game of the Strategy\n10. best game of the HORROR\n11. best game of the Farming\n12. best game of the PUZZLE\n13. best game of the RACING\n14. best game of the Card"
+
+########################### What Bestgame Years ?  ########################################
+  utter_bestgame_years:
+  - text: "Would you like to know the best game of which year? \nRight now, the information we have is only for the years 2023 and 2024 \nYou have to choose - Greatest game in 2023 - or - 2024 of top-rated game -"
+
+########################### moredata ########################################
+  utter_more:
+  - text: "Please specify additional information about what you would like to know more about. \nFor example, more than the top 3, additional information about the game The Sims 4."
+
+########################### moreTOP3  ########################################
+  utter_moretop3?:
+  - text: "You want to know more than the top 3 of what? You can choose more top 3 by the year you want to know or by the 14 genre of the game.
+            \nRight now, the information we have is only for the years 2023 and 2024 
+            \nYou have to choose - years more top 3 - or - 14 Genre more top 3 -"
+
+########################### moreTOP3 Years ?  ########################################
+  utter_moretop3_years:
+  - text: "Would you like to know more than the top 3 of which year? 
+          \nRight now, the information we have is only for the years 2023 and 2024 
+          \nYou have to choose - 2024 more top 3 of the Top game - or - 2023 more top 3 of best game -"
+
+
+########################### moreTOP3 Genre ?  ########################################
+  utter_moretop3_Genre:
+  - text: "Please select the genre more than the top 3 you want to know. Currently, our data includes the following genres:
+              \n1. simulation more than top 3
+              \n2. more than top 3 of the Visual Novel
+              \n3. more than top 3 of the Shooting
+              \n4. more than top 3 of the MOBA
+              \n5. more than top 3 of the RPG
+              \n6. more than top 3 of the MMORPG
+              \n7. more than top 3 of the Rhythm
+              \n8. more than top 3 of the Turn-based
+              \n9. more than top 3 of the Strategy
+              \n10. more than top 3 of the HORROR
+              \n11. more than top 3 of the Farming
+              \n12. more than top 3 of the PUZZLE
+              \n13. more than top 3 of the RACING
+              \n14. more than top 3 of the Card"
+
+
+########################### top 3 2024  ########################################
+  utter_Bestgame_2024_Top3:
+  - text: "This is the top 3 games that are best game 2024. \n1.ANOTHER CODE: RECOLLECTION \n2.APOLLO JUSTICE: ACE ATTORNEY TRILOGY \n3.BANISHERS: GHOSTS OF NEW EDEN \nYou can see additional rankings by typing 'leading game of 2024 more than 3'."
+
+
+########################### top 5 2024  ######################################## 
+  utter_Bestgame_2024_Top5:
+  - text: "This is the top 5 games that are best game 2024. \n1.ANOTHER CODE: RECOLLECTION \n2.APOLLO JUSTICE: ACE ATTORNEY TRILOGY \n3.BANISHERS: GHOSTS OF NEW EDEN \n4.SKULL AND BONES \n5.MARIO VS. DONKEY KONG"
+
+
+########################### top 3 2023  ########################################
+  utter_Bestgame_2023_Top3:
+  - text: "This is the top 3 games that are best game 2023. \n1.Bless Global \n2. Shining Land \n3. Hay Day \nYou can see additional rankings by typing '2023 more top 3 of finest'."
+
+
+########################### top 5 2023  ########################################
+  utter_Bestgame_2023_Top5:
+  - text: "Sure!. This is the top 5 games that are best game 2023. \n1.Bless Global \n2. Shining Land \n3. Hay Day \n4. Clash Heroes \n5. Ares: Rise of Guardian"
+
+
+########################### No More Data  ########################################
+  utter_nomoredata_top5:
+  - text: "Apologies, currently our data only goes up to the Top 5, but there may be additional information in the future. Please stay tuned."
+
+
+########################### top 3 best game simulation  ########################################
+  utter_Bestgame_simulation_Top3:
+  - text: "This is the top 3 games that are best game simulation. \n1. The Sims 4 \n2. Stardew Valley \n3. Cities : Skylines \nYou can see additional rankings by typing 'simulation more than top 3'."
+
+########################### top 5 best game simulation  ########################################
+  utter_Bestgame_simulation_Top5:
+  - text: "This is the top 5 games that are best game simulation. \n1. The Sims 4 \n2. Stardew Valley \n3. Cities : Skylines \n4. Planet Zoo \n5. SimCity"
+
+
+
+########################### top 3 best game Visual Novel  ########################################
+  utter_Bestgame_simulation_Top3:
+  - text: "This is the top 3 games that are best game simulation. \n1. VA-11 Hall-A: Cyberpunk Bartender Action \n2. Danganronpa: Trigger Happy Havoc \n3. STEINS;GATE \nYou can see additional rankings by typing 'simulation more than top 3'."
+
+########################### top 5 best game Visual Novel  ########################################
+  utter_Bestgame_simulation_Top5:
+  - text: "This is the top 5 games that are best game simulation. \n1. VA-11 Hall-A: Cyberpunk Bartender Action \n2. Danganronpa: Trigger Happy Havoc \n3. STEINS;GATE \n4. Phoenix Wright: Ace Attorney Trilogy \n5. CLANNAD"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+entities:
+  - Best
+  
+
+slots:
+  Best:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: Best

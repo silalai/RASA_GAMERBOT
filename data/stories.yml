@@ -1,0 +1,135 @@
+version: "3.0"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet 
+
+- story: options
+  steps:
+  - intent: option_info
+  - action: utter_options 
+
+
+###############################################################################
+########################### Bestgame ########################################
+###############################################################################
+
+
+########################### Bestgame ? ########################################
+- story: Bestgame     ##U: bestgame -> B: bestgame? years or Genre 
+  steps:
+  - intent: Bestgame_info
+  - action: utter_bestgame?
+
+########################### Bestgame Years ?  ########################################
+- story: Bestgame_Years  ##U: years -> B: years?
+  steps:
+  - intent: bestgame_years
+  - action:  utter_bestgame_years
+
+########################### Bestgame Genre ? ########################################
+- story: bestgame_Genre  ##U: Genre -> B: Genre?
+  steps:
+  - intent: bestgame_Genre
+  - action: utter_bestgame_Genre
+
+########################### moredata ########################################
+- story: moredata  ##U: more -> B: more?
+  steps:
+  - intent: more_info
+  - action: utter_more
+
+
+########################### moreTOP3  ########################################
+- story: Bestgame_moreTop3  ##U: moretop3 -> B: top3?
+  steps:
+  - intent: more_Top3
+  - action: utter_moretop3?
+
+########################### more top3 Years ?  ########################################
+- story: years_moretop3  ##U: years -> B: years?
+  steps:
+  - intent: moretop3_years
+  - action:  utter_moretop3_years
+
+###########################  more top3 Genre ? ########################################
+- story: Genre_moretop3 ##U: Genre -> B: Genre?
+  steps:
+  - intent: moretop3_Genre
+  - action: utter_moretop3_Genre
+
+
+########################### top 3 2024 ########################################  
+- story: Bestgame_2024 path1  ##User บอกประเภทBestGame และบอกปี 2024
+  steps:
+  - intent: Bestgame_2024_info
+  - action: utter_Bestgame_2024_Top3
+
+########################### top 5 2024  ########################################
+- story: moredata_bestgame2024 path1 moretop3
+  steps:
+  - intent: bestgame_moretop3_2024_info
+  - action: utter_Bestgame_2024_Top5
+
+########################### 2024 no more data ########################################  
+- story: moredata_bestgame2024 path2 moretop5
+  steps:
+  - intent: bestgame_moretop5_2024_info
+  - action: utter_nomoredata_top5
+
+########################### top 3 2023  ########################################
+- story: Bestgame_2023 path1  ##U: bestgame_2023 ->B: Show top3_2023
+  steps:
+  - intent: Bestgame_2023_info
+  - action: utter_Bestgame_2023_Top3
+
+########################### top 5 2023  ########################################
+- story: moredata_bestgame2023 path1 moretop3 ##U: more -> B: more? -> U: moretop3_2023 
+  steps:
+  - intent: bestgame_moretop3_2023_info
+  - action: utter_Bestgame_2023_Top5
+
+########################### 2023 no more data ########################################  
+- story: moredata_bestgame2023 path2 moretop5
+  steps:
+  - intent: bestgame_moretop5_2023_info
+  - action: utter_nomoredata_top5
+
+########################### top 3 best game simulation  ########################################
+- story: Bestgame_simulation path1  
+  steps:
+  - intent: Bestgame_simulation
+  - action: utter_Bestgame_simulation_Top3
+
+########################### top 5 best game simulation  ########################################
+- story: moredata_bestgame_simulation path1 moretop3  
+  steps:
+  - intent: bestgame_moretop3_simulation
+  - action: utter_Bestgame_simulation_Top5
+
+########################### simulation no more data ########################################  
+- story: moredata_bestgame_simulation path2 moretop5
+  steps:
+  - intent: bestgame_moretop5_simulation
+  - action: utter_nomoredata_top5
+
+########################### top 3 best game Visual Novel  ########################################
+- story: Bestgame_Visual Novel path1  
+  steps:
+  - intent: Bestgame_Visual Novel
+  - action: utter_Bestgame_Visual Novel_Top3
+
+########################### top 5 best game Visual Novel  ########################################
+- story: moredata_bestgame_Visual Novel path1 moretop3  
+  steps:
+  - intent: bestgame_moretop3_Visual Novel
+  - action: utter_Bestgame_Visual Novel_Top5
+
+########################### simulation no more data ########################################  
+- story: moredata_bestgame_Visual Novel path2 moretop5
+  steps:
+  - intent: bestgame_moretop5_Visual Novel
+  - action: utter_nomoredata_top5

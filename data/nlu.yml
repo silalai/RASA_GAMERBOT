@@ -1,0 +1,176 @@
+version: "3.0"
+
+########################### greet  ########################################
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - morning
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Holaaaa
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: Thanks
+  examples: |
+    - Thank you
+    - Thanks
+    - That's helpful
+    - Awesome, thanks
+    - Thanks for helping me
+
+########################### option  ########################################
+
+- intent: option_info
+  examples: |
+    - How you could help me?
+    - What you can do?
+    - What help you provide?
+    - How you can be helpful?
+    - What support is offered
+    - What help is available from you?
+
+
+########################### Bestgame ########################################
+- intent: Bestgame_info
+  examples: |
+    - Can you recommend the best game?
+    - Help introduce the most fun game.
+    - Introducing a game that is becoming interesting.
+    - best game
+    - most fun game
+
+
+########################### Bestgame Years  ########################################
+- intent: bestgame_years
+  examples: |
+    - year best game
+    - years best game
+
+
+########################### Bestgame Genre  ########################################
+- intent: bestgame_Genre
+  examples: |
+    - Genre best game
+    - type best game
+    - category best game
+    - 14 genre best game
+
+
+########################### moredata  ########################################
+- intent: more_info
+  examples: |
+    - I want to know more about this.
+    - more 
+
+########################### moreTOP3  ########################################
+- intent: more_Top3
+  examples: |
+    - I want to know more than just the top 3.
+    - more than just the top 3
+    - more than the top 3
+    - more top 3
+    - more top3
+
+
+########################### more top3 Years  ########################################
+- intent: moretop3_years
+  examples: |
+    - years more top 3
+    - years more top3
+
+###########################  more top3 Genre  ########################################
+- intent: moretop3_Genre
+  examples: |
+    - Genre more top 3
+    - Genre more top3
+    - 14 Genre more top 3
+    - 14 Genre more top3
+
+
+########################### best game 2024 ########################################
+- intent: Bestgame_2024_info
+  examples: |
+    - 2024 of top-rated game
+
+########################### more top3 2024  ########################################
+- intent: bestgame_moretop3_2024_info
+  examples: |
+    - leading game of 2024 more than 3
+
+
+########################### more top5 2024  ########################################
+- intent: bestgame_moretop5_2024_info
+  examples: |
+    - more than top 5 2024 of the greatest
+
+########################### best game 2023  ########################################
+- intent: Bestgame_2023_info
+  examples: |
+    - Greatest game in 2023
+
+########################### more top3 2023  ########################################
+- intent: bestgame_moretop3_2023_info
+  examples: |
+    - 2023 more top 3 of finest
+
+
+########################### more top5 2023  ########################################
+- intent: bestgame_moretop5_2023_info
+  examples: |
+    - Finest game more top 5 2023
+
+########################### best game simulation  ########################################
+- intent: Bestgame_simulation
+  examples: |
+    - simulation best game
+    
+########################### more top3 best game simulation  ########################################
+- intent: bestgame_moretop3_simulation
+  examples: |
+    - simulation more than top 3
+
+
+########################### more top5 best game simulation  ########################################
+- intent: bestgame_moretop5_simulation
+  examples: |
+    - best game simulation more top 5
+
+    
+
+########################### best game Visual Novel  ########################################
+- intent: Bestgame_simulation
+  examples: |
+    - Visual Novel best game
+    
+########################### more top3 Visual Novel best game   ########################################
+- intent: bestgame_moretop3_simulation
+  examples: |
+    - Visual Novel more than top 3
+
+
+########################### more top5 best game Visual Novel  ########################################
+- intent: bestgame_moretop5_simulation
+  examples: |
+    - best game Visual Novel more top 5
